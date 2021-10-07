@@ -1,0 +1,137 @@
+
+html{
+  font-size: calc(60% + 0.7vmin);
+}
+
+header {
+  background: url('../Picture/banner.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 500px;
+}
+
+.features-icons {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.features-icons-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #0080ff;
+}
+
+
+.GreenButton {
+  background-color: greenyellow;
+  font-size: 3rem;
+}
+.showcase-img {
+  background-size: cover;
+  min-height: 30rem;
+}
+
+.showcase-text {
+  padding: 8rem;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonials-item img {
+  max-width: 12rem;
+  box-shadow: 0 5px 5px #adb5bd;
+}
+
+.call-to-action {
+  background: url("../Picture/banner.gif") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (max-width: 360px) {
+  .showcase-text {
+      padding: 4rem;
+  }
+
+  .showcase-img {
+      min-height: 15rem;
+  }
+}
+
+body{
+  font-family: 'Sarabun', sans-serif;
+}
+
+h1{
+  font-size: 2.8rem;
+  color: red;
+}
+img{
+  max-height: 600px;
+  max-width: 65%;
+  
+  object-fit: cover;
+}
+/* 
+.btn-lg{
+  padding:1.5rem 2rem;font-size:2rem;border-radius:1rem
+}
+.btn-xlg{
+  padding:1.5rem .5rem;font-size:3rem;border-radius:2rem
+}
+.btn-m{
+  padding:.1rem .1rem;font-size:2rem;border-radius:.5rem
+} */
+
+span {
+  display: block;
+}
+
+span:nth-child(1){
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+}
+span:nth-child(2){
+  font-size: 1.2rem;
+  color:navy;
+}
+.navbar-toggler-icon{
+  height: 0.75em;
+}
+
+
+li {
+  position: relative;
+}
+
+.del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #cf0f3f;
+  margin-top: 3rem;
+  padding: .3rem 0.5rem;
+  color: wheat;
+  cursor: pointer;
+}
+
+.radio-inline {
+  display: inline;
+  padding-left: 0;
+  padding-right: 20px;
+}
+.radio-inline input {
+  margin-left: 0;
+  margin-right: -20px;
+}
+
