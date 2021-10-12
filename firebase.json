@@ -6,10 +6,32 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "cleanUrls": true,
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/thanks",
+        "destination": "/thanks.html"
+      }
+    ],
+    "redirects": [
+        {
+            "source": "/TestGoogleLongin",
+            "destination": "https://ararkodai.web.app/template",
+            "type": 301
+        },
+        {
+          "source": "/template",
+          "destination": "/TestGoogleLongin",
+          "type": 301
+      },
+      {
+        "source": "**/!(*.css|*.js|*.map|*.jpg|*.gif|*.png|*.php)",
+        "destination": "/template.html",
+        "type": 301
       }
     ]
   }

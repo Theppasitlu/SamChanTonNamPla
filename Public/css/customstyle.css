@@ -125,6 +125,7 @@ li {
   cursor: pointer;
 }
 
+
 .radio-inline {
   display: inline;
   padding-left: 0;
@@ -135,3 +136,16 @@ li {
   margin-right: -20px;
 }
 
+
+
+/* SamShanTodNamPla */
+
+
+.bg-sam {
+  background-color: #F7F2F6;
+}
+
+.createroom-img {
+  background-size: cover;
+  min-height: 30rem;
+}
