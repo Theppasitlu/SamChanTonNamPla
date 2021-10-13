@@ -74,7 +74,6 @@ body{
 
 h1{
   font-size: 2.8rem;
-  color: red;
 }
 img{
   max-height: 600px;
@@ -113,6 +112,8 @@ span:nth-child(2){
 li {
   position: relative;
 }
+
+
 
 .del {
   position: absolute;

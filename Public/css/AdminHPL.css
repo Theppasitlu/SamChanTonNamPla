@@ -1,0 +1,87 @@
+li {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.bg-sam {
+    background-color: #F7F2F6;
+}
+
+@media (min-width: 1700px) {
+    .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1650px;
+    }
+  }
+.del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #cf0f3f;
+    margin-top: 0.5rem;
+    padding: .3rem 0.5rem;
+    color: wheat;
+    cursor: pointer;
+}
+span {
+    display: block;
+}
+span:nth-child(1){
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+span:nth-child(2){
+    font-size: 1.2rem;
+    color:navy;
+    font-family:Impact;
+  }
+
+.radio-inline {
+    display: inline;
+    padding-left: 0;
+    padding-right: 20px;
+}
+.radio-inline input {
+    margin-left: 0;
+    margin-right: -20px;
+}
+
+
+
+
+.navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.35rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+  
+.createroom-img {
+    background-size: cover;
+    background-position:center;
+    /* background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: right; */
+    min-height: 1rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 6.8rem;
+    height: 5rem;
+    font-size: 2.8rem;
+}
+
+.form-control-lg {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+.col-form-label{
+    font-size: calc(2.5vmin);
+    margin-top: 0.7rem;
+}
