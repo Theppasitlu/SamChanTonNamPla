@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Mitr&family=Open+Sans&family=Prompt&family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/ico" href="Picture/t.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/HPL.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+    <title>SamShanTodNamPla</title>
+</head>
+<body>
+    
+  <div class="container">
+      <h1>Learn Firebase Stores</h1>
+
+      <form id="CreateRoomAdd">
+          <input type="text" name="RoomNameAdd" placeholder="Add RoomName">
+          <input type="text" name="RoomPasswordAdd" placeholder="Password">
+          <input type="date" name="RoomStartAdd" placeholder="Start">
+          <input type="date" name="RoomCloseAdd" placeholder="Close">
+          <!-- <button id="submitNewTaskButton" type="submit">add</button> -->
+          <select name="GuestVoteAdd" required>
+            <option selected>Guest vote</option>
+            <option value="Yes">✔️Yes</option>
+            <option value="No">❌No</option>
+          </select>
+          <!-- <div class="btn btn-success" id="submitNewTaskButton" type="submit">add</div> -->
+          <input class="btn btn-block btn-lg btn-success justify-content-end" id="submitbtn" value="Create room" type="submit"></input>
+          <br>
+          <input type="text" name="RoomPasswordAdd" placeholder="Password">
+          <!-- <input class="btn btn-block btn-lg btn-success justify-content-end" id="submitbtn" value="Modify" type="edit"></input> -->
+      </form>
+      <ul id="userlist"></ul>
+  </div>
+
+  <script src="js/RoomAdminTest.js"></script>
+
+  
+</body>
+</html>
