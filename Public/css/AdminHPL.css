@@ -1,3 +1,7 @@
+li {
+    position: relative;
+    margin-bottom: 3rem;
+}
 .bg-sam {
     background-color: #F7F2F6;
 }

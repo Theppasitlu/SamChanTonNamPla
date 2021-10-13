@@ -85,7 +85,7 @@ form.addEventListener("submit", (e) => {
         RoomStart   : form.RoomStartAdd.value,
         RoomClose   : form.RoomCloseAdd.value,
         GuestVote   : form.GuestVoteAdd.value,
-        UserData    : [{ food: "Pizza", color: "Blue", Vote: "0,1,2" },
+        UserData    : [{ UserID: "Pizza", UserName: "Blue", Time: "0,1,2" },
                         {food: "Pizza", color: "Blue", Vote: [1,2,4]}],
         
     })
