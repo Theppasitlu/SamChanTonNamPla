@@ -34,8 +34,6 @@
       max-width: 1650px;
     }
   }
-<<<<<<< HEAD
-=======
 
 .edit {
     position: absolute;
@@ -47,7 +45,6 @@
     color: wheat;
     cursor: pointer;
 }
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
 .del {
     position: absolute;
     top: 3rem;
@@ -118,7 +115,6 @@ span:nth-child(2){
     font-size: calc(2vmin);
     margin-top: 0.7rem;
 }
-<<<<<<< HEAD
 .btn-samchan {
     background-color: #C0F2A1;
     color: #976B84;
@@ -128,16 +124,13 @@ span:nth-child(2){
     font-weight: bold;
     font-family: Roboto;
 }
+.btn-primary.active{
+    background-color: magenta;
+}
+.btn-primary:hover{
+    background-color: yellow;
+}
 .btn-samchan:hover{
     background-color: #73af5c;
     color:#fff;
 }
-=======
-.btn-primary{
-    background-color: magenta;
-}
-
-
-
-
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
