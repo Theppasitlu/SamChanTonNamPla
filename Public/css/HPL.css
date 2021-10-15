@@ -2,8 +2,24 @@
     background:hotpink;
     color:white;
     text-shadow:2px 2px #0FF;
+    
+}
+.top-heading{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.bottom-space{
+    padding-bottom: 5rem;
 }
 
+
+.bg-home{
+    background-color: #FFF2F2;
+}
+.h1 {
+    color:#B61226;
+    font-weight: bold;
+}
 .bg-sam {
     background-color: #E6D2D8;
 }
@@ -27,6 +43,11 @@
 .bg-nav-samshan {
     background-color: #DE9595;
 
+}
+
+#navbarToggler{
+    color: #765050;
+    background-color: #f0d6d5;
 }
 
 @media (min-width: 1700px) {
@@ -93,16 +114,16 @@ span:nth-child(2){
 }
   
 .createroom-img {
-    background-size: cover;
+    background-size: contain;
     background-position:center;
-    /* background-repeat: no-repeat;
-    object-fit: cover;
+    background-repeat: no-repeat;
+    /* object-fit: cover;
     object-position: right; */
     min-height: 1rem;
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 6.8rem;
-    height: 5rem;
+    height: 10rem;
     font-size: 2.8rem;
 }
 
@@ -133,4 +154,7 @@ span:nth-child(2){
 .btn-samchan:hover{
     background-color: #73af5c;
     color:#fff;
+}
+.nav-font-color{
+    color:#765050;
 }
