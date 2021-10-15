@@ -1,6 +1,10 @@
 .bg-sam {
     background-color: #F7F2F6;
 }
+.bg-nav-samshan {
+    background-color: #DE9595;
+
+}
 
 @media (min-width: 1700px) {
     .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
@@ -74,10 +78,23 @@ span:nth-child(2){
 
 .form-control-lg {
     padding: 0.5rem 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     border-radius: 1rem;
 }
 .col-form-label{
-    font-size: calc(2.5vmin);
+    font-size: calc(2vmin);
     margin-top: 0.7rem;
+}
+.btn-samchan {
+    background-color: #C0F2A1;
+    color: #976B84;
+    border-radius: 1.875rem;  
+    border: 0.5px solid #976B84 ;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.btn-samchan:hover{
+    background-color: #73af5c;
+    color:#fff;
 }
