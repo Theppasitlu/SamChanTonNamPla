@@ -1,5 +1,28 @@
+::selection{
+    background:hotpink;
+    color:white;
+    text-shadow:2px 2px #0FF;
+}
+
 .bg-sam {
+    background-color: #E6D2D8;
+}
+.bg-noti {
+    background-color: #F6EFF4;
+}
+.bg-noti-bar {
+    background-color: #F8E2F2;
+    font-size: 1.25rem;
+}
+.fc-scrollgrid-shrink-cushion {
+    font-style: italic;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
     background-color: #F7F2F6;
+
 }
 
 @media (min-width: 1700px) {
@@ -8,10 +31,6 @@
     }
   }
 
-  li {
-    position: relative;
-    margin-bottom: 3rem;
-}
 .edit {
     position: absolute;
     top: 0;
@@ -54,10 +73,6 @@ span:nth-child(2){
     margin-left: 0;
     margin-right: -20px;
 }
-
-
-
-
 .navbar-brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -96,7 +111,9 @@ span:nth-child(2){
     font-size: calc(2.5vmin);
     margin-top: 0.7rem;
 }
-
+.btn-primary{
+    background-color: magenta;
+}
 
 
 

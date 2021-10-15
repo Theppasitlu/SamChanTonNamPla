@@ -1,9 +1,10 @@
-li {
-    position: relative;
-    margin-bottom: 3rem;
-}
 .bg-sam {
     background-color: #F7F2F6;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
 }
 
 @media (min-width: 1700px) {
@@ -11,9 +12,24 @@ li {
       max-width: 1650px;
     }
   }
-.del {
+
+  li {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.edit {
     position: absolute;
     top: 0;
+    right: 0;
+    background-color: lawngreen;
+    margin-top: 0.5rem;
+    padding: .3rem 0.5rem;
+    color: wheat;
+    cursor: pointer;
+}
+.del {
+    position: absolute;
+    top: 3rem;
     right: 0;
     background-color: #cf0f3f;
     margin-top: 0.5rem;
