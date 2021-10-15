@@ -12,7 +12,7 @@
     <link rel="icon" type="image/ico" href="Picture/t.ico">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/HPL.css">
+    <link rel="stylesheet" href="css/AdminHPL.css">
     
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
@@ -38,7 +38,14 @@
           <!-- <div class="btn btn-success" id="submitNewTaskButton" type="submit">add</div> -->
           <input class="btn btn-block btn-lg btn-success justify-content-end" id="submitbtn" value="Create room" type="submit"></input>
           <br>
-          <input type="text" name="RoomPasswordAdd" placeholder="Password">
+          <input type="text" name="UserNameEdit" placeholder="User Name">
+          <input type="text" name="TimeEditIndex" placeholder="Index">
+          <input type="text" name="TimeEdit" placeholder="20XX1231_XX:XX">
+          <select name="AddOrEdit" required>
+            <option selected>Add or Edit</option>
+            <option value="Add">➕Add</option>
+            <option value="Edit">💯Edit</option>
+          </select>
           <!-- <input class="btn btn-block btn-lg btn-success justify-content-end" id="submitbtn" value="Modify" type="edit"></input> -->
       </form>
       <ul id="userlist"></ul>

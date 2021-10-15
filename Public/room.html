@@ -11,9 +11,18 @@
 
     <link rel="icon" type="image/ico" href="Picture/t.ico">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/customstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.1/css/all.css' rel='stylesheet'>
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <link rel="stylesheet" href="css/HPL.css">
     
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+    
+
+
+    <script src="https://kit.fontawesome.com/542deac178.js" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
@@ -52,71 +61,66 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
     
     <!-- Header -->
   <section class="bg-sam text-center features-icon">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
-          <div class="ffeatures-icon-item mx-auto mb-5 mb-lg-3">
-            <div class="features-form">
-              <div class="row">
-                <label for="RoomName" class="col-sm-3 col-form-label">Room name</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control-lg mb-5" id="RoomName" required>
-                </div>
-              </div>
+        <div class="col-lg-3 my-lg-5 bg-noti">
+          <div class="row">
+            <div class="col-lg-4 my-lg-4"><div class="month">January</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">February</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">March</div></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 my-lg-4"><div class="month">April </div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">May</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">June</div></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 my-lg-4"><div class="month">July</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">August</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">September</div></div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 my-lg-4"><div class="month">October</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">November</div></div>
+            <div class="col-lg-4 my-lg-4"><div class="month">December</div></div>
+          </div>
 
-              <div class="row">
-                <label for="RoomPassword" class="col-sm-3 col-form-label my-5">Room password</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control-lg my-5 " id="RoomPassword" required>
-                </div>
-              </div>
-
-              <div class="row">
-                <label for="RoomStart" class="col-sm-3 col-form-label my-5">Room start date</label>
-                <div class="col-sm-9">
-                  <input type="date" class="form-control-lg my-5 " id="RoomStart" required>
-                </div>
-              </div>
-            </div>                       
+        <div class="bg-noti-bar text-left my-lg-3">PLANE</div>
+        <ul id="Planelist"></ul>
+        <div class="bg-noti-bar text-left my-lg-5">Notifications</div>
+        <ul id="Notilist"></ul>
+        <div class="bg-noti-bar text-left my-lg-3">
+          <div class="row justify-content-between">
+            <div class="col-lg-7 my-lg-1">Vote👍</div>
+            <div class="col-lg-5 text-right">
+              <input class="btn btn-lg btn-outline-danger" id="submitbtn" value="❌" type="submit"></input>
+              <input class="btn btn-lg btn-outline-success" id="submitbtn" value="✔️" type="submit"></input>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-4">
-          <div class="row">
-            <label for="GuestVote" class="col-sm-4 col-form-label">Guest vote</label>
-            <select class="col-sm-4" required>
-              <option selected>Select</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <img class="" style="background-image: url('Picture/showcase-1.jpg');"></img>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-              <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo est rerum, et magnam animi accusamus atque explicabo facilis! Minus, perferendis.</p>
-            </div>
-          <div class="btn btn-success">Create Room</div>
+        <div class="bg-noti-bar text-left my-lg-5">AVAILABLE!!</div>
+        <ul id="Availablelist"></ul>
+        </div>
+        
+        <div class="col-lg-9">
+          <div id='calendar'></div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="row">
-    <label for="GuestVote" class="col-sm-4 col-form-label">Guest vote</label>
-    <select class="col-sm-4" required>
-      <option selected>Select</option>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
-  </div>
+  
+
 
     <!-- jQuery first, then Bootstrap JS. -->
-    <script src="js/Final.js"></script>
+    <script src="js/FireBaseCalendar.js"></script>
     <script src="js/dynamicQuestion.js"></script>
+    <script>var calendar = new FullCalendar.Calendar(calendarEl, {themeSystem: 'bootstrap'});</script>
+    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>

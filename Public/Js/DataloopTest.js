@@ -12,7 +12,7 @@
             messagingSenderId: "235827349277",
             appId: "1:235827349277:web:91f35ebb4a2f667ce543f4",
             measurementId: "G-SHZZM5KTB6"
-          };  
+          };          
           
         firebase.initializeApp(firebaseConfig);
         // firebase.analytic();
@@ -24,30 +24,6 @@
 
         let form = document.querySelector("#CreateRoomAdd");
 
-function WriteDB(UserData, ID){
-    UserData.reduce(function (Prev,Cur){
-        Prev = Cur;
-        if (Prev.UserName == form.UserNameEdit.value){
-            if(form.AddOrEdit.value == "Edit"){
-                let TimeIndex = Prev.Time.indexOf(form.TimeEditIndex.value);
-                Prev.Time[TimeIndex] = form.TimeEdit.value;
-            } else if (form.AddOrEdit.value == "Add") {
-                Prev.Time.push(form.TimeEdit.value);
-            }            
-        } else{
-        }
-        db.collection("RoomPlan").doc(ID).update({
-            "UserData": firebase.firestore.FieldValue.arrayUnion(Prev),
-        }); 
-        // return Prev;
-    }, {});
-    renderUser(change.doc);
-    form.TimeEdit.value = "";
-}
-
-// function FilterTimeFunction(value) {
-//     return value != form.TimeEditIndex.value
-// }
 
 function renderUser(doc){
     let li = document.createElement("li");
@@ -63,26 +39,21 @@ function renderUser(doc){
     let edit = document.createElement("div")
     let del = document.createElement("div")
 
-    // let NameTimeDataValue = doc.data().UserData.reduce((Prev, Cur) => ({...Prev,
-    //     [Cur.UserName]: Object.assign(Prev[Cur.Time] || {}, Cur) 
-    //     }),{}); //ชื่อ : map ทั้งหมด
-    // console.log(NameTimeDataValue);
     // let TimeVal = doc.data().UserData.reduce((Time, Cur) => ({
     //     ...Time,
     //     [Cur.Vote]: (Time[Cur.Vote] || []).concat(Cur)
-    // }), {});    //หาเวลาโวหดตรงกัน
+    // }), {});    //หาเวลาตรงกัน
+
+    let TimeValue = doc.data().UserData.reduce((Prev, Cur) => [Cur.Time + "\r\n"].concat(Prev), []);    //เวลาทุกคน
     // let NameTimeValue = doc.data().UserData.reduce((Prev, Cur) => ({
     //     ...Prev, 
     //     [Cur.UserName]: (Prev[RoomStartVar] || []).concat(Cur.Time) 
     //     }), {});    //ชื่อ : เวลา
 
-    let TimeValue = doc.data().UserData.reduce((Prev, Cur) => [Cur.Time + "\r\n"].concat(Prev), []);    //เวลาทุกคน
+    let DataUser = doc.data().UserData;
 
-    let UserDataVar = doc.data().UserData;
-    const Array1 = [{ UserID: "Nugget", UserName: "Yellow", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,1,2" }];
-    const Array2 = [{ UserID: "Steak", UserName: "Red", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,3,5" }];
-    const DataUser = { UserID: "Pie", UserName: "Pink", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,3,5" };
-
+    console.log(DataUser);
+    
     edit.className = "edit";
     del.className = "del";
     
@@ -115,19 +86,23 @@ function renderUser(doc){
     del.addEventListener("click", (e) => {
         let id = e.target.parentElement.getAttribute("data-id");
         db.collection("RoomPlan").doc(id).update({
-            "UserData": firebase.firestore.FieldValue.arrayUnion(DataUser),
+            "UserData": firebase.firestore.FieldValue.delete(),
+            
         });
+        
     });
     edit.addEventListener("click", (e) => {
         let id = e.target.parentElement.getAttribute("data-id");
         db.collection("RoomPlan").doc(id).update({
             "UserData": firebase.firestore.FieldValue.delete(),
+            
         });
-        WriteDB(UserDataVar, id)
+        db.collection("RoomPlan").doc(id).update({
+            "UserData": firebase.firestore.FieldValue.arrayUnion(DataUser + { UserID: "Steak", UserName: "Red", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,3,5" }),
+            
+        });
     });
 }
-
-
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -137,13 +112,8 @@ form.addEventListener("submit", (e) => {
         RoomStart   : form.RoomStartAdd.value,
         RoomClose   : form.RoomCloseAdd.value,
         GuestVote   : form.GuestVoteAdd.value,
-<<<<<<< HEAD
-        UserData    : [{ UserID: "Pizza", UserName: "Blue", Time: "0,1,2" },
-                        {food: "Pizza", color: "Blue", Vote: [1,2,4]}],
-=======
         UserData    : [{ UserID: "Pizza", UserName: "Blue", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,1,2" },
                         {UserID: "Cake", UserName: "Green", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,1,2"}],
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
         
     })
     

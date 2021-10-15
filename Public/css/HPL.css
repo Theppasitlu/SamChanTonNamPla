@@ -1,5 +1,28 @@
+::selection{
+    background:hotpink;
+    color:white;
+    text-shadow:2px 2px #0FF;
+}
+
 .bg-sam {
+    background-color: #E6D2D8;
+}
+.bg-noti {
+    background-color: #F6EFF4;
+}
+.bg-noti-bar {
+    background-color: #F8E2F2;
+    font-size: 1.25rem;
+}
+.fc-scrollgrid-shrink-cushion {
+    font-style: italic;
+}
+
+#calendar {
+    max-width: 1100px;
+    margin: 40px auto;
     background-color: #F7F2F6;
+
 }
 .bg-nav-samshan {
     background-color: #DE9595;
@@ -11,9 +34,23 @@
       max-width: 1650px;
     }
   }
-.del {
+<<<<<<< HEAD
+=======
+
+.edit {
     position: absolute;
     top: 0;
+    right: 0;
+    background-color: lawngreen;
+    margin-top: 0.5rem;
+    padding: .3rem 0.5rem;
+    color: wheat;
+    cursor: pointer;
+}
+>>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
+.del {
+    position: absolute;
+    top: 3rem;
     right: 0;
     background-color: #cf0f3f;
     margin-top: 0.5rem;
@@ -43,10 +80,6 @@ span:nth-child(2){
     margin-left: 0;
     margin-right: -20px;
 }
-
-
-
-
 .navbar-brand {
     padding-top: 0.3125rem;
     padding-bottom: 0.3125rem;
@@ -85,6 +118,7 @@ span:nth-child(2){
     font-size: calc(2vmin);
     margin-top: 0.7rem;
 }
+<<<<<<< HEAD
 .btn-samchan {
     background-color: #C0F2A1;
     color: #976B84;
@@ -98,3 +132,12 @@ span:nth-child(2){
     background-color: #73af5c;
     color:#fff;
 }
+=======
+.btn-primary{
+    background-color: magenta;
+}
+
+
+
+
+>>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
