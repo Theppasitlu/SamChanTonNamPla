@@ -45,10 +45,8 @@
 
 }
 
-#navbarToggler{
-    color: #765050;
-    background-color: #f0d6d5;
-}
+
+    /* color: #765050 */
 
 @media (min-width: 1700px) {
     .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
@@ -157,4 +155,18 @@ span:nth-child(2){
 }
 .nav-font-color{
     color:#765050;
+}
+.bg-login{
+    background-color: #E2BCBB;
+    border-radius: 20px;
+    border: 5px solid #fdb3d6;
+    border-style: none outset outset none;
+}
+.btn-signin{
+    background-color: #FCF6E8;
+    border-radius: 10px;
+    border: 0.5px solid #941625;
+    
+    
+    
 }

@@ -22,56 +22,129 @@
 <body>
 
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-nav-samshan">
-        <div class="container">
-            <a href="#" class="navbar-brand" role="img" aria-label="Bootstrap">
-            <img src="Picture/t.ico" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            สามชั้นทอดน้ำปลา
-            </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a href="#" class="nav-link active" aria-current="page">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <button class="btn btn-outline-success" type="submit">Sign Up</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    
-      <div class="row">
-        <label for="GuestVote" class="col-sm-4 col-form-label">Guest vote</label>
-        <select class="col-sm-4" required>
-          <option selected>Select</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-      </div>
-      <div class="row">
-        <label for="GuestVote" class="col-sm-4 col-form-label">Guest vote</label>
-        <select class="col-sm-4" required>
-          <option selected>Select</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
-      </div>
+    <nav class="navbar navbar-dark bg-nav-samshan">
+      <div class="container">
+          <a href="Home.html" class="navbar-brand" role="img" aria-label="Bootstrap">
+          <img src="Picture/t.ico" alt="" width="30" height="24" class="d-inline-block align-text-center">
+          สามชั้นทอดน้ำปลา
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      🙀
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link active nav-font-color" aria-current="page">🥓 View your room</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link nav-font-color">🥓 View your schedule</a>
+            </li>
+            <li class="nav-item">
+              <a href="TestGoogleLongin" class="nav-link  nav-font-color">🥓 Settings</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link  nav-font-color">🥓 About us</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!--End of container-->
+    </nav>
+  <section class="bg-home text-center">
+    <div class="container">
+      <div class="row ">
+        <div class="col-6">
+          <div class="row mb-3">
+            <div class="col-3 text-white createroom-img text-center" style="background-image: url('Picture/black-pc.png');"></div>
+            <p class="h4 col-9 my-auto "> Create event and check free time of attendant.</p>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3 text-white createroom-img text-center" style="background-image: url('Picture/red-pc.png');"></div>
+            <p class="h4 col-9 my-auto ">Vote for event time </p>
+        </div>
+        <div class="row mb-3">
+            <div class="col-3 text-white createroom-img text-center" style="background-image: url('Picture/bluebell.png');"></div>
+            <p class="h4 col-9 my-auto ">Notify when detail of event change by email of attendant</p>
+        </div>
+        
+
+        </div>
+        <div class="col-6 bg-login my-5">
+          <p class="h4 my-3">Sign In</p>
+          <div class="row">
+          <label for="RoomNameAdd" class="col-sm-3 col-form-label mb-0 mb-lg-2 text-start">Username</label>
+                <div class="col-sm-12">
+                  <input type="text" class="form-control form-control-lg mb-0 mb-lg-2" id="RoomNameAdd" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <label for="RoomPasswordAdd" class="col-sm-3 col-form-label mb-lg-2 text-start">Password</label>
+                <div class="col-sm-12">
+                  <input type="text" class="form-control form-control-lg mb-lg-2 my-2" id="RoomPasswordAdd" required>
+                </div>
+              </div>
+              <div class="row justify-content-evenly">
+                <div class="col-4">
+                  <div class="btn btn-signin "> 
+                    Sign Up
+                  </div>
+                  
+                </div>
+                <div class="col-4">
+                  <div class="btn btn-signin "> 
+                    Sign In
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="row my-3">
+                <p>---or---</p>
+              </div>
+             
+            
+              <div class="row justify-content-evenly mb-4">
+                <div class="col-4">
+                  <div class="btn btn-signin "> 
+                    Sign in with Facebook
+                  </div>
+                  
+                </div>
+                <div class="col-4">
+                  <div class="btn btn-signin "> 
+                    Sign in with Google
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="row justify-content-evenly">
+                <div class="col-4">
+                  <div class="btn btn-signin "> 
+                    Sign in with Facebook
+                  </div>
+                  
+                </div>
+                <div class="col-4">
+                  <div class="btn btn-signin "> 
+                    Forgot password
+                  </div>
+                  
+                </div>
+                <div class="bottom-space">
+
+                </div>
+              </div>
+         </div>
+
+      </div>
+      
+    </div>
+  </section>
+    
+      
+
+      
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="js/Final.js"></script>
