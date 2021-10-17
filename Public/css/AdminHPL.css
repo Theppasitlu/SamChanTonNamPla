@@ -1,35 +1,24 @@
-<<<<<<< HEAD
-li {
-    position: relative;
-    margin-bottom: 3rem;
-}
-=======
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
 .bg-sam {
     background-color: #F7F2F6;
 }
 
-<<<<<<< HEAD
-=======
 #calendar {
     max-width: 1100px;
     margin: 40px auto;
 }
 
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
 @media (min-width: 1700px) {
     .container-xxxl, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
       max-width: 1650px;
     }
   }
-<<<<<<< HEAD
 .del {
     position: absolute;
     top: 0;
     right: 0;
-=======
+}
 
-  li {
+li {
     position: relative;
     margin-bottom: 3rem;
 }
@@ -47,7 +36,6 @@ li {
     position: absolute;
     top: 3rem;
     right: 0;
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
     background-color: #cf0f3f;
     margin-top: 0.5rem;
     padding: .3rem 0.5rem;
@@ -76,9 +64,6 @@ span:nth-child(2){
     margin-left: 0;
     margin-right: -20px;
 }
-
-
-
 
 .navbar-brand {
     padding-top: 0.3125rem;

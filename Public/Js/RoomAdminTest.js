@@ -110,6 +110,8 @@ function renderUser(doc){
     li.appendChild(edit);
     li.appendChild(del);
 
+    console.log(doc.data().UserData)
+
     userlist.appendChild(li);
 
     del.addEventListener("click", (e) => {
@@ -127,8 +129,6 @@ function renderUser(doc){
     });
 }
 
-
-
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     db.collection("RoomPlan").add({
@@ -137,13 +137,8 @@ form.addEventListener("submit", (e) => {
         RoomStart   : form.RoomStartAdd.value,
         RoomClose   : form.RoomCloseAdd.value,
         GuestVote   : form.GuestVoteAdd.value,
-<<<<<<< HEAD
-        UserData    : [{ UserID: "Pizza", UserName: "Blue", Time: "0,1,2" },
-                        {food: "Pizza", color: "Blue", Vote: [1,2,4]}],
-=======
         UserData    : [{ UserID: "Pizza", UserName: "Blue", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,1,2" },
                         {UserID: "Cake", UserName: "Green", Time:["20191025_10:30","20191025_11:30","20191026_09:30","20191026_12:30"], Vote: "0,1,2"}],
->>>>>>> b1c32e338664b6a654853ab3cb5ae781e014551f
         
     })
     

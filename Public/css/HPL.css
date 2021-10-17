@@ -145,9 +145,12 @@ span:nth-child(2){
     font-weight: bold;
     font-family: Roboto;
 }
-.btn-primary.active{
+.btn-primary{
     background-color: magenta;
 }
+.btn-primary.active{
+    background-color: magenta;
+} 
 .btn-primary:hover{
     background-color: yellow;
 }
