@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       select: function(info) {
         alert('selected ' + info.startStr + ' to ' + info.endStr);
       },
+      button: "btn-warning",
       selectable: true,
       selectMirror: true,
       unselectAuto: true,

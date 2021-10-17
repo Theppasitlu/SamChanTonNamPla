@@ -139,18 +139,35 @@ span:nth-child(2){
     color: #976B84;
     border-radius: 1.875rem;  
     border: 0.5px solid #976B84 ;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     font-family: Roboto;
 }
+.btn-samchan2 {
+    background-color: #FC6C3F;
+    color: #fff;
+    border-radius: 1.875rem;  
+    border: 0.5px solid #976B84 ;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Roboto;
+}
+.btn-primary{
+    background-color:#8A1422;
+}
+
 .btn-primary.active{
-    background-color: magenta;
+    background-color: #cf7c86;
 }
 .btn-primary:hover{
-    background-color: yellow;
+    background-color: #cf7c86;
 }
 .btn-samchan:hover{
     background-color: #73af5c;
+    color:#fff;
+}
+.btn-samchan2:hover{
+    background-color: #c22d00;
     color:#fff;
 }
 .nav-font-color{
@@ -160,13 +177,38 @@ span:nth-child(2){
     background-color: #E2BCBB;
     border-radius: 20px;
     border: 5px solid #fdb3d6;
+    /* border-right: 5px solid #cc9db7;
+    border-right: 5px solid #cc9db7; */
     border-style: none outset outset none;
+    
 }
 .btn-signin{
     background-color: #FCF6E8;
     border-radius: 10px;
     border: 0.5px solid #941625;
-    
-    
-    
 }
+.room-font {
+    font-size: 18px;
+    font-weight: bold;
+    color: #976B84;
+}
+.room-style{
+    border: 2px solid #d4c5ce
+
+}
+.room-font2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #942c65;
+}
+.room-font3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #942c65;
+}
+.room-style2{
+    border: 2px solid #cab0bf
+/* .fc-right .fc-prev-button, .fc-right .fc-next-button{
+    background-color: #b1d583;
+    background-image: none;
+} */
